@@ -3,10 +3,10 @@
 
 void prnMenu()
 {
-	cout << "*******************************************" << endl;
-	cout << "* 1. 삽입    2. 삭제    3. 출력   4. 종료 *" << endl;
-	cout << "*******************************************" << endl;
-	cout << endl;
+	cout << "*******************************************" << '\n';
+	cout << "* 1. 삽입    2. 삭제    3. 출력   4. 종료 *" << '\n';
+	cout << "*******************************************" << '\n';
+	cout << '\n';
 	cout << "원하시는 메뉴를 골라주세요: ";
 }
 
@@ -37,19 +37,19 @@ int main()
 			cout << "원하시는 값을 입력해주세요: ";
 			cin >> tmpItem;
 			p->Insert(tmpItem);
-			cout << tmpItem << "가 삽입되었습니다." << endl;
+			cout << tmpItem << "가 삽입되었습니다." << '\n';
 			break;
 
 		case 2:
 			if (p->Delete(tmpItem) == true)
-				cout << tmpItem << "가 삭제되었습니다." << endl;
+				cout << tmpItem << "가 삭제되었습니다." << '\n';
 
 			else
-				cout << "비어있습니다. 삭제 실패" << endl;
+				cout << "비어있습니다. 삭제 실패" << '\n';
 			break;
 
 		case 3:
-			cout << "크기: " << p->GetSize() << endl;
+			cout << "크기: " << p->GetSize() << '\n';
 			p->Print();
 			break;
 
@@ -58,7 +58,7 @@ int main()
 			break;
 
 		default:
-			cout << "잘못 입력하셨습니다." << endl;
+			cout << "잘못 입력하셨습니다." << '\n';
 			break;
 		}
 
