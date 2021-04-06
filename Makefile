@@ -7,7 +7,7 @@ HEDRS = LinkedList.h Stack.h
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
-TARGET = a.out
+TARGET = main
 
 all : $(TARGET)
 
